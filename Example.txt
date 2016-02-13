@@ -15,26 +15,14 @@ A poke has the following attributes:
 	- The UUID of the user who it's going to
 	- A date and time sent
 
+A work record line has the following attributes:
+	- The ID of the work record which contains it
+	- The starting time of this work
+	- The ending time of this work
+	- The description of this work
+	- The subject ID of this work
+	- The note of this work
 
-
-
-
-Example:
-
-Users:
-	- Billy, UUID 1, Assigned to UUID 3, User type student
-	- John, UUID 2, Assigned to UUID 4, User type student
-	- Philip, UUID 3, User type teacher
-	- Martha, UUID 4, User type teacher
-
-Records:
-	- 15/84/96, UUID 1
-	- 15/85/96, UUID 1
-	- 15/86/96, UUID 1
-	- 15/84/96, UUID 2
-	- 15/85/96, UUID 2
-	- 15/86/96, UUID 2
-
-Pokes:
-	- To UUID 4, From UUID 2, message: I'm sorry for breaking the pencil Martha, Sent at 6:23 PM on 15/84/96
-	- To UUID 2, From UUID 4, message: It's alright :), Sent at 7:41 PM on 15/84/96
+A category has the following attributes:
+	- An ID
+	- A name
