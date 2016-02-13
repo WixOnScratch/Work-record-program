@@ -3,7 +3,6 @@ A user (whether a student or a teacher) is referanced by a UUID so that if their
 A student has the following attributes:
 	- A name
 	- An/multiple assigned teacher(s)
-	- A record ID (Tells the system who owns which records)
 
 A teacher has the following attributes:
 	- A name
@@ -11,7 +10,7 @@ A teacher has the following attributes:
 	- A list of permissions over the records of different users
 
 A work record has the following attributes:
-	- A record ID (Tells the system who owns which records)
+	- A UUID of who owns it
 	- A date (To identify between records with the same record ID)
 
 A poke has the following attributes:
