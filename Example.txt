@@ -1,13 +1,9 @@
 A user (whether a student or a teacher) is referanced by a UUID so that if their name ever needs to be changed (E.G because of a typo or error), the process can be simple.
 
-A student has the following attributes:
+A user has the following attributes:
 	- A name
-	- An/multiple assigned teacher(s)
-
-A teacher has the following attributes:
-	- A name
-	- Multiple assigned students
-	- A list of permissions over the records of different users
+	- An/multiple assigned teacher(s)/student(s)
+	- The type of user (E.G Staff, teacher, student) to define permissions.
 
 A work record has the following attributes:
 	- A UUID of who owns it
@@ -25,21 +21,19 @@ A poke has the following attributes:
 
 Example:
 
-Students:
-	- Billy, UUID 1, Assigned to UUID 3, Record ID 1
-	- John, UUID 2, Assigned to UUID 4, Record ID 2
-
-Teachers:
-	- Philip, UUID 3, Permissions: To poke, edit records of and view records of students assigned
-	- Martha, UUID 4, Permissions: To poke, edit records of and view records of students assigned
+Users:
+	- Billy, UUID 1, Assigned to UUID 3, User type student
+	- John, UUID 2, Assigned to UUID 4, User type student
+	- Philip, UUID 3, User type teacher
+	- Martha, UUID 4, User type teacher
 
 Records:
-	- 15/84/96, record ID 1
-	- 15/85/96, record ID 1
-	- 15/86/96, record ID 1
-	- 15/84/96, record ID 2
-	- 15/85/96, record ID 2
-	- 15/86/96, record ID 2
+	- 15/84/96, UUID 1
+	- 15/85/96, UUID 1
+	- 15/86/96, UUID 1
+	- 15/84/96, UUID 2
+	- 15/85/96, UUID 2
+	- 15/86/96, UUID 2
 
 Pokes:
 	- To UUID 4, From UUID 2, message: I'm sorry for breaking the pencil Martha, Sent at 6:23 PM on 15/84/96
