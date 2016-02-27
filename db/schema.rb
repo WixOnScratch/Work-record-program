@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160227165743) do
+ActiveRecord::Schema.define(version: 20160227173225) do
 
   create_table "pokes", force: :cascade do |t|
     t.text     "message"
@@ -20,6 +20,13 @@ ActiveRecord::Schema.define(version: 20160227165743) do
     t.boolean  "read"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+  end
+
+  create_table "subjects", force: :cascade do |t|
+    t.string   "name"
+    t.string   "color"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "user_relationships", force: :cascade do |t|
@@ -33,6 +40,17 @@ ActiveRecord::Schema.define(version: 20160227165743) do
     t.string   "role"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "work_record_lines", force: :cascade do |t|
+    t.integer  "work_record_id"
+    t.time     "start"
+    t.time     "end"
+    t.string   "description"
+    t.integer  "subject_id"
+    t.string   "note"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "work_records", force: :cascade do |t|
