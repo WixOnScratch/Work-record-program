@@ -2,6 +2,7 @@ A user (whether a student or a teacher) is referanced by a UUID so that if their
 
 A user has the following attributes:
 	- A name
+	- A username
 	- An/multiple assigned teacher(s)/student(s)
 	- The type of user (E.G Staff, teacher, student) to define permissions.
 
