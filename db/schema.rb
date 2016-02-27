@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160227022312) do
+ActiveRecord::Schema.define(version: 20160227165743) do
+
+  create_table "pokes", force: :cascade do |t|
+    t.text     "message"
+    t.integer  "sender_id"
+    t.integer  "recipient_id"
+    t.boolean  "read"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "user_relationships", force: :cascade do |t|
     t.integer "teacher_id", null: false
