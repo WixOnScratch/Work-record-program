@@ -1,0 +1,6 @@
+<h1>I wanna be, the very best, showing all the work records! OWWWW!</h1>
+<ul>
+  <% @work_records.each do |wr| %>
+  <li><%= link_to wr.date, wr %></li>
+  <% end %>
+</ul>

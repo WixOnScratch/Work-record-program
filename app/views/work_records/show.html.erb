@@ -1,0 +1,5 @@
+<h1><%= @work_record.date %></h1>
+
+<% @lines.each do |line| %>
+<p>started at: <%= l line.start, format: :time %> | ended at: <%= l line.end, format: :time %> | description: <%= line.description %></p>
+<% end %>
