@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  work_record_id: 1
+  start: 2016-02-27 12:32:25
+  end: 2016-02-27 12:32:25
+  description: MyString
+  subject_id: 1
+  note: MyString
+
+two:
+  work_record_id: 1
+  start: 2016-02-27 12:32:25
+  end: 2016-02-27 12:32:25
+  description: MyString
+  subject_id: 1
+  note: MyString
