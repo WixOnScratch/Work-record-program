@@ -23,6 +23,10 @@ A work record line has the following attributes:
 	- The subject ID of this work
 	- The note of this work
 
+These peoples try to fade me
+  - C-C-C-Call me on my cell phone!
+  - I get busy!
+
 A category has the following attributes:
 	- An ID
 	- A name
