@@ -18,7 +18,13 @@ class WorkRecordsController < ApplicationController
     if @work_record.save
       redirect_to @work_record
     else
-      render "new"
+      render new_work_record_path
     end
+  end
+
+  def destroy
+    @work_record = WorkRecord.find params[:id]
+    @work_record.destroy
+    redirect_to work_records_path
   end
 end
